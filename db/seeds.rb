@@ -1,13 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+require_relative './houses.rb'
+require_relative './students.rb'
 
-student.destroy_all
-House.destroy_al
+Student.destroy_all
+House.destroy_all
 
 gryffindor = House.create(name:"Gryffindor", image_url:"http://images1.wikia.nocookie.net/__cb20120922143611/harrypotter/images/7/70/G_final.jpg")
 hufflepuff = House.create(name:"Hufflepuff", image_url:"http://images3.wikia.nocookie.net/__cb20111027164827/harrypotter/images/3/3f/H_final.jpg")
@@ -25,3 +20,11 @@ cedric = Student.create(name: "Cedric Diggory", img_url:"http://images1.wikia.no
 
 draco = Student.create(name: "Draco Malfoy", img_url:"http://images1.wikia.nocookie.net/__cb20100925140918/harrypotter/images/thumb/2/21/Dracodh.jpg/250px-Dracodh.jpg", house: slytherin)
 pansy = Student.create(name: "Pansy Parkinson", img_url:"http://images1.wikia.nocookie.net/__cb20110801070343/harrypotter/images/thumb/6/62/Pansyinfobox.jpg/250px-Pansyinfobox.jpg", house: slytherin)
+
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
