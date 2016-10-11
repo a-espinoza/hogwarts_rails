@@ -1,6 +1,5 @@
-Rails::application.routes.draw do
-
+Rails.application.routes.draw do
   root :to => "house#index"
-  resource :house
+  resource :houses
   resources :students
 end
